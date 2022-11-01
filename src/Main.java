@@ -1,4 +1,4 @@
-import com.sun.org.apache.xpath.internal.operations.Bool;
+
 
 // clase -> es una plantilla que contiene elementos, objeto, metodos, funciones, variables.
 // public y class
@@ -19,6 +19,17 @@ public class Main {
 
     // Metodos, funciones, variables y constructores
     public static void main(String[] args) {
+
+        // poder llamar un metodo, hay que primero llamar su clase.
+        // NombreClase elObjeto = new NombreClase();
+        Metodos miMetodo = new Metodos();
+        miMetodo.sumaDeDosNumeros(10,12);
+
+        Metodos.restaDeDosNumerosStatico(20,10);
+    }
+
+
+    private void sesion1(){
         String miApellido = "Davila";
         // linea que nos indica una salida a pantalla
         System.out.println("Este es mi primer codigo! " + miApellido);
@@ -29,8 +40,6 @@ public class Main {
         miSesionObjeto = new Sesion1();
 
         Sesion1 miSesionObjeto2 = new Sesion1("Deya");
-
     }
-
 
 }
