@@ -34,4 +34,23 @@
      public static void main(String[] args) {
         restaDeDosNumeros(1,1);
     }
+
+
+    // Funcion Tiene logica, proceso interno, serie de pasos para realizar algo
+     // una funcion siempre regresa un valor/objeto
+     // 1. identificador
+     // 2. tipo de dato/objeto que se va a regresar
+     // 3. nombre de la funcion
+     public int sumaDeDosNumerosFunction(int numero1,int numero2) {
+        int sumatoria = numero1 + numero2;
+        return sumatoria;
+        //return numero1 + numero2;
+     }
+
+     public boolean isReady(String ready) {
+        if(ready == "Ok" )
+            return true;
+
+        return false;
+     }
 }
