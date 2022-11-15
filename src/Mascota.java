@@ -5,10 +5,14 @@ public class Mascota {
     String color;
     int edad;
     boolean ojosColor = false;
-    boolean ladra = false;
+    String sonido;
     boolean volar = false;
     String nombre;
 
+    public Mascota(String tipo, String nombre) {
+        this.nombre = nombre;
+        System.out.println("Soy un " + tipo + " y me llamo " + nombre);
+    }
     public String getRaza() {
         return raza;
     }
@@ -49,18 +53,25 @@ public class Mascota {
         this.ojosColor = ojosColor;
     }
 
-    public boolean isLadra() {
-        return ladra;
+    public
+    String getSonido() {
+        return this.sonido;
     }
 
-    public void setLadra(boolean ladra) {
-        this.ladra = ladra;
+    public void setSonido(String sonido) {
+        this.sonido = sonido;
     }
 
-    public boolean isVolar() {
+    public boolean vuela() {
         return volar;
     }
 
+    public String puedeVolar() {
+        if(this.volar)
+            return "Puedo volar!!!";
+        else
+            return "No vuela";
+    }
     public void setVolar(boolean volar) {
         this.volar = volar;
     }

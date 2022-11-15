@@ -39,7 +39,7 @@ public class Main {
         jetta.frenar();
 
         mustang.avanzar();
-        */
+
 
         ICarro tesla = new Tesla();
         tesla.encender();
@@ -47,6 +47,23 @@ public class Main {
         // encender con llave
         ICarro carro = new Ford();
         carro.encender();
+
+         */
+
+        Mascota nuevaMascota = new Mamifero("Perro");
+        nuevaMascota.setSonido("Woof woof");
+        nuevaMascota.setColor("Cafe");
+        //nuevaMascota.puedeVolar();
+
+        Mascota perico = new Aves("Perico");
+        perico.setSonido("habla");
+
+
+
+        System.out.println(perico.puedeVolar() + " y mi sonido es "+ perico.getSonido());
+        System.out.println(nuevaMascota.puedeVolar() + " y mi sonido es "+ nuevaMascota.getSonido());
+
+
     }
 
     // Crear una clase Mascota
