@@ -1,5 +1,5 @@
 
-import autos.Carro;
+import autos.*;
 
 // clase -> es una plantilla que contiene elementos, objeto, metodos, funciones, variables.
 // public y class
@@ -22,7 +22,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Mandar llamar la clase carro
-        Carro jetta = new Carro("Jetta");
+        /*Carro jetta = new Carro("Jetta");
         jetta.setColor("Rojo");
         jetta.setVin("123123ASDASD123");
         jetta.setTipoCombustible(1);
@@ -39,8 +39,14 @@ public class Main {
         jetta.frenar();
 
         mustang.avanzar();
+        */
 
+        ICarro tesla = new Tesla();
+        tesla.encender();
 
+        // encender con llave
+        ICarro carro = new Ford();
+        carro.encender();
     }
 
     // Crear una clase Mascota

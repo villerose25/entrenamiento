@@ -17,6 +17,14 @@ public class Carro {
 
     boolean encendido = false;
 
+    enum TipoCombustible {
+        Gasolina,
+        Gas,
+        Diesel,
+        NoAplica,
+        NoSeleccionado
+    }
+
     // metodos de obtener y colocar informacion
     // get / set
     String getColor() {
@@ -82,6 +90,9 @@ public class Carro {
             case 3:
                 this.tipoCombustible = "Gas";
                 break;
+            case 4:
+                this.tipoCombustible = "No aplica";
+                break;
             default:
                 this.tipoCombustible = "No seleccionado";
                 break;
@@ -117,10 +128,5 @@ public class Carro {
 
     public void frenar() {
         System.out.println("Frenando...");
-    }
-
-    public void encender(){
-        this.encendido = true;
-        System.out.println(this.nombre + " encendido!");
     }
 }
